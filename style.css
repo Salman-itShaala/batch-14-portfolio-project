@@ -4,20 +4,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
 }
 
 :root {
+  --light-bg-color: #fff;
+  --dark-bg-color: #fff;
+  --light-text-color: #1a1a1a;
+  --heading-color: #1a1a1a;
+  --text-color: #1a1a1a;
+  --common-padding: 0 8vw;
+  font-size: 10px;
+}
+
+:root.dark {
   --light-bg-color: #111;
   --dark-bg-color: #000;
   --light-text-color: #f0f0f0;
   --heading-color: #fff;
   --text-color: #c4c4c4;
-  --common-padding: 0 8vw;
-  font-size: 10px;
 }
 
 body {
   font-family: "Inter", sans-serif;
+  scroll-behavior: smooth;
 }
 
 /* 
@@ -28,6 +38,11 @@ body {
 a {
   color: var(--light-text-color);
   text-decoration: none;
+  transition: color 0.1s ease-in-out;
+}
+
+a:hover {
+  color: violet;
 }
 
 ul {
@@ -61,6 +76,14 @@ nav ul li button {
   color: var(--light-text-color);
   font-size: 1.8rem;
   cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+nav ul li button:hover {
+  color: violet;
+}
+
+#sun {
+  display: none;
 }
 
 /* -----------header end---------------- */
@@ -142,3 +165,14 @@ main {
 }
 
 /* ------------main end -------------- */
+
+.box {
+  height: 100vh;
+  background-color: violet;
+}
+
+#projects {
+  height: 50vh;
+  background: black;
+  color: white;
+}
