@@ -32,6 +32,8 @@ ul {
   list-style: none;
 }
 
+/* -----------header start---------------- */
+
 header {
   font-size: 1.5rem;
   display: flex;
@@ -39,10 +41,12 @@ header {
   padding: var(--common-padding);
   background-color: var(--light-bg-color);
   color: var(--light-text-color);
-  height: 12vh;
+  min-height: 12vh;
   align-items: center;
 }
-
+.header-left a {
+  font-size: 3rem;
+}
 nav ul {
   display: flex;
   align-items: center;
@@ -56,3 +60,83 @@ nav ul li button {
   font-size: 1.8rem;
   cursor: pointer;
 }
+
+/* -----------header end---------------- */
+
+/* ------------main start -------------- */
+
+main {
+  font-size: 1.5rem;
+  min-height: 88vh;
+  background-color: var(--light-bg-color);
+  color: var(--light-text-color);
+  padding: var(--common-padding);
+}
+
+.hey-para {
+  padding-top: 12vh;
+}
+
+.name-para,
+.about-para,
+.hey-para {
+  padding-bottom: 8vh;
+}
+/* .about-para {
+  letter-spacing: 0.1rem;
+  line-height: 1.6rem;
+} */
+
+.name-para {
+  font-size: 8rem;
+  font-family: monospace;
+  color: #787e7f;
+  background-image: linear-gradient(
+    45deg,
+    #787e7f,
+    #fe5370 25%,
+    #9806c8 50%,
+    #d13cf5 75%,
+    #36de49 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+.main-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-btns-left ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.main-btns-left ul li {
+  background: linear-gradient(
+    115deg,
+    #4fcf70,
+    #fad648,
+    #a767e5,
+    #12bcfe,
+    #44ce7b
+  );
+  padding: 0.2rem;
+  display: flex;
+  border-radius: 4px;
+}
+.main-btns-left ul li a {
+  padding: 1rem 2rem;
+  background-color: var(--light-bg-color);
+  border-radius: 4px;
+}
+
+.main-btns-left ul li a span i {
+  padding-right: 1rem;
+}
+
+/* ------------main end -------------- */
