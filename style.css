@@ -10,6 +10,7 @@
   --light-text-color: #f0f0f0;
   --heading-color: #fff;
   --text-color: #c4c4c4;
+  --common-padding: 0 8vw;
   font-size: 10px;
 }
 
@@ -22,3 +23,36 @@ body {
   font-family: monospace;
 
 */
+a {
+  color: var(--light-text-color);
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+header {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  padding: var(--common-padding);
+  background-color: var(--light-bg-color);
+  color: var(--light-text-color);
+  height: 12vh;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+nav ul li button {
+  background-color: transparent;
+  border: none;
+  color: var(--light-text-color);
+  font-size: 1.8rem;
+  cursor: pointer;
+}
